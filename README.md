@@ -28,3 +28,6 @@ automatic by function potinter like linux system call ioctrl().
         #   Bugfix:
         #   Maintenance:
             #   Change to support repository-2.x.x.
+    #   apisql-2.0.1.1
+        #   Add libparser.a in lib directory.
+        #   Change file name from api_sql to apisql.

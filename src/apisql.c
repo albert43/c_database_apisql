@@ -1,7 +1,7 @@
 //  uci application interface for cli.
 
 #include <unistd.h>
-#include "api_sql.h"
+#include "apisql.h"
 #include "sql.h"
 
 //  SQL_RET_SUCCESS
