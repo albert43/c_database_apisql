@@ -27,7 +27,7 @@
 
 #define  API_SQL_VERSION      "1.0.0"
 
-#include "common.h"
+//#include "common.h"
 #include "libcommon.h"
 
 //  The SQL engine type enumulation.
@@ -187,7 +187,7 @@ typedef struct APISQL*      SQL_HANDLE;
 
 //  Describe:
 //    Open a API handle with designated DB file.
-//    If the DB file not exist, it would create a empty one.
+//    If the DB file not exist, it will create a empty one.
 //  i/p:
 //    Type      : The SQL engine type.
 //    pszDbPath : The database file path.

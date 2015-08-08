@@ -23,7 +23,7 @@
 #include <errno.h>                //  system error numbers
 #include <fcntl.h>                //  file control options
 #include <time.h>                 //  time types 
-#ifdef OS_LINUX
+
 #include <sys/types.h>            //  data types
 #include <sys/stat.h>             //  data returned by the stat() function
 #include <sys/wait.h>             //  declarations for waiting
@@ -32,7 +32,7 @@
 #include <dlfcn.h>                //  dynamic linking
 #include <sys/ioctl.h>
 #include <sys/poll.h>
-#endif
+
  //////////////////////////////////////////////////////////////////////////////////////////
    ////   _____.....-------=========  Common Define  =========-------....._____      ////
     /////////////////////////////////////////////////////////////////////////////////
@@ -49,12 +49,12 @@ typedef DWORD *                         LPDWORD;
 typedef void                            VOID;
 typedef VOID *                          LPVOID;
 typedef unsigned int                    UINT;
-#ifdef OS_LINUX
 typedef enum _BOOL
 {
 	FALSE = 0,
 	TRUE
 }BOOL;
+#ifdef OS_LINUX
 #define DEBUG_PRINTF(fmt,ARG...)		printf(fmt,##ARG)
 #else
 #define DEBUG_PRINTF					printf
